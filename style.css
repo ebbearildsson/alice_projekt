@@ -85,6 +85,38 @@ body {
     animation: sleigh 10s linear infinite;
 }
 
+@media screen and (orientation:landscape) {
+    .roof {
+        width: 10vh;
+        border-left: 5vh solid transparent;
+        border-right: 5vh solid transparent;
+        border-bottom: 5vh solid rgb(17, 17, 17);
+    }
+
+    .house {
+        width: 20vh;
+    }
+
+    .window {
+        width: 4vh;
+        height: 6vh;
+        margin: 0.5vh 0.5vh;
+        border: 0.5vh solid rgba(77, 77, 77, 0.5);
+    }
+
+    .door {
+        width: 4vh;
+        height: 6vh;
+        margin: 1vh 5vh 0 5vh;
+        border: 0.5vh solid rgba(77, 77, 77, 0.5);
+    }
+
+    #sleigh {
+        width: 50vh;
+        top: 30vh;
+    }
+}
+
 @keyframes sleigh {
     0% {
         left: -50vw;
