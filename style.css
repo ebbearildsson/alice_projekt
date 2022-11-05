@@ -1,0 +1,95 @@
+:root {
+    --night-sky: rgb(0, 0, 36);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: var(--night-sky);
+    background-image: url("sky.png");
+    background-size: 60vw 60vw;
+    background-position: center;
+    background-repeat: repeat;
+    overflow: hidden;
+}
+
+.street {
+    height: 100vh;
+    width: 100%;
+
+    background: linear-gradient(rgba(0, 0, 36, 0.37), rgb(0, 0, 0));
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.roof {
+    width: 10vw;
+    height: 0;
+    border-left: 5vw solid transparent;
+    border-right: 5vw solid transparent;
+    border-bottom: 5vw solid rgb(17, 17, 17);
+}
+
+.house {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 20vw;
+}
+
+#first {
+    background: linear-gradient(rgb(100, 29, 29), rgb(19, 2, 2));
+}
+
+#second {
+    background: linear-gradient(rgb(39, 60, 77), rgb(26, 40, 51));
+}
+
+#third {
+    background: linear-gradient(rgb(44, 44, 44), rgb(15, 15, 15));
+}
+
+.window {
+    background: linear-gradient(rgb(255, 246, 167), rgb(255, 187, 0));
+    width: 4vw;
+    height: 6vw;
+    margin: 0.5vw 0.5vw;
+    border: 0.5vw solid rgba(77, 77, 77, 0.5);
+    box-shadow: 0px 2px 10px 2px rgba(255, 187, 0, 0.5);
+}
+
+.off {
+    background: linear-gradient(var(--night-sky), rgb(0, 0, 0));
+    box-shadow: none;
+}
+
+.door {
+    background-color: rgb(41, 23, 0);
+    width: 4vw;
+    height: 6vw;
+    margin: 1vw 5vw 0 5vw;
+    border: 0.5vw solid rgba(77, 77, 77, 0.5);
+}
+
+#sleigh {
+    position: absolute;
+    width: 50vw;
+    top: 10vw;
+    left: -50vw;
+}
+
+.move {
+    animation: sleigh 10s linear infinite;
+}
+
+@keyframes sleigh {
+    0% {
+        left: -50vw;
+    }
+    100% {
+        left: 150vw;
+    }
+}
